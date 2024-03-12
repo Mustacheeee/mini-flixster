@@ -14,7 +14,7 @@ class TracksViewController: UIViewController, UITableViewDataSource {
 
         // Create a URL for the request
         // In this case, the custom search URL you created in in part 1
-        let url = URL(string: "https://itunes.apple.com/search?term=blackpink&attribute=artistTerm&entity=song&media=music")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=761e769dec9ed6b40f6edff8b052e39b")!
 
         // Use the URL to instantiate a request
         let request = URLRequest(url: url)
@@ -59,7 +59,7 @@ class TracksViewController: UIViewController, UITableViewDataSource {
                 }
                 print("✅ \(tracks)")
             } catch {
-                print("❌ Error parsing JSON: \(error.localizedDescription)")
+                print("❌ Error parsing JSON: \(error)")
             }
         }
 

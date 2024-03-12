@@ -27,7 +27,7 @@ class TrackCell: UITableViewCell {
         artistNameLabel.text = track.overview
 
         // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: track.poster_path, into: trackImageView)
+        Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500" + track.poster_path.absoluteString)!, into: trackImageView)
     }
 
 }

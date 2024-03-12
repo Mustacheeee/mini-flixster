@@ -20,10 +20,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Nuke.loadImage(with: track.poster_path, into: trackImageView)
+        Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500" + track.poster_path.absoluteString)!, into: trackImageView)
         trackNameLabel.text = track.original_title
         artistLabel.text = track.overview
-        albumLabel.text = track.detail
+//        albumLabel.text = track.detail
 //        genreLabel.text = track.primaryGenreName
 
         // Create a date formatter to style our date and convert it to a string

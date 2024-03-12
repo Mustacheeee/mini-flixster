@@ -8,7 +8,6 @@ struct Track: Decodable {
     let original_title: String
     let overview: String
     let poster_path: URL
-    let detail: String
 }
 struct TracksResponse: Decodable {
     let results: [Track]

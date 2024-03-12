@@ -16,10 +16,12 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
             let album = albums[indexPath.item]
 
             // Get the artwork image url
-            let imageUrl = album.artworkUrl100
+            let imageUrl = album.poster_path
+        
 
             // Set the image on the image view of the cell
-            Nuke.loadImage(with: imageUrl, into: cell.albumImageView)
+            Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500" + album.poster_path.absoluteString)!, into: cell.albumImageView)
+        
 
             return cell
     }
@@ -34,7 +36,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
         collectionView.dataSource = self
         // Do any additional setup after loading the view.
         // Create a search URL for fetching albums (`entity=album`)
-        let url = URL(string: "https://api.themoviedb.org/3/movie/550?api_key=761e769dec9ed6b40f6edff8b052e39b")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=761e769dec9ed6b40f6edff8b052e39b")!
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
