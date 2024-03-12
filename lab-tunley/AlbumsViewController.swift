@@ -14,9 +14,6 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
 
             // Use the indexPath.item to index into the albums array to get the corresponding album
             let album = albums[indexPath.item]
-
-            // Get the artwork image url
-            let imageUrl = album.poster_path
         
 
             // Set the image on the image view of the cell
