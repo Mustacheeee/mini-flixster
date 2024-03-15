@@ -1,23 +1,26 @@
-# Project 3 - *Mini flixter*
+# Project 2 - *mini-flixter*
 
 Submitted by: **Yixin Zhao**
 
-**Mini flixter** is an app that introduces networking of movies and their details
+**mini-flixter** is a movie browsing app that shows movies in list and posters
 
-Time spent: **58** hours spent in total
+Time spent: **40** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] Implement network call and table view to display a list of movies currently playing (title, description, image)
-- [x] App has a collection view with the same list of movies
-- [x] Uses a tab bar controller to switch between collection view and table view screens
+- [x] Users are able to see a customized app icon and launch screen
+- [x] Displays at least 5 different movies in a table view
+- [x] Can tap into detail view of movie with a full description, backdrop image, and title
  
 The following **optional** features are implemented:
 
-- [ ] Make an additional network call to another end-point.	
-- [x] Allow users to scroll when context items are off-screen (table view implemention)
+- [x] Unique UI changes, such as background, font/color changes, etc.
+- [x] User implements a collection view
+- [x] User implemenets tab bar controller with at least two screens
+- [ ] Your app should work for any screen size and orientation using AutoLayout constraints
+  - [x] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
 
 The following **additional** features are implemented:
 
@@ -25,10 +28,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .](https://www.loom.com/share/d5f30ad955aa4545b8f1bb1c1ab023f5?sid=134a5036-8646-4426-af89-3665a7a286a4)
 
-https://www.loom.com/share/d5f30ad955aa4545b8f1bb1c1ab023f5?sid=134a5036-8646-4426-af89-3665a7a286a4
+## Notes
 
+Learning and implement table views
 
 ## License
 
